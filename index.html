@@ -1,9 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
   <head>
-    <script src="main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="stylesheet.css">
     <meta http-equiv="X-UA-Compatible" content="IE=7">
@@ -16,20 +14,6 @@
   </head>
   <body>
 
-
-    <div id="iconbar">
-      <div class="icons whatsapp"><a href="https://api.whatsapp.com/send?phone=+972525270491" target="_blank">
-        <img src="https://img.icons8.com/color/50/000000/whatsapp--v1.png"/></a></div>
-      <div class="icons phone"><a href="tel:0548511223">
-        <img src="https://img.icons8.com/ios-filled/50/4a90e2/apple-phone.png"/></a></div>
-      <div class="icons fb">
-        <a href="https://www.facebook.com/profile.php?id=100050560593713" target="_blank">
-          <img src="https://img.icons8.com/metro/52/4a90e2/facebook-new--v2.png"/></a>
-      </div>
-      <div class="icons mail">
-        <a href="mailto:S6528718@gmail.com" target="_blank"><img src="email.ico"/></a>
-      </div>
-    </div>
 
     <div id="leftBanner">
        <div id="bannerdiv"> 
@@ -58,19 +42,27 @@
      </div>
      <div id="top-bar">
        <div class="bar-list">
-         <a href="#" id="top-bar-item">
+         <div class="top-bar-item">
+          <a href="#">
            צור קשר
-           <ul id="contact-list" class="dropping">
-             <li class="contact-item hide">
-              <a href="tel:026263576">
-                <i class="fas fa-phone"></i>
-                026263576
+           
+           <i class="fa fa-caret-down"></i>
+          </a>
+           <div class="dropping">
+              <a href="tel:026263576" class="drop-item">
+                טלפון
+                <i class="fa fa-phone"></i>
               </a>
-             </li>
-             <li class="contact-item"></li>
-             <li class="contact-item"></li>
-           </ul>
-         </a>
+             <a href="mailto:S6528718@gmail.com" target="_blank" class="drop-item">
+              מייל
+               <i class="fa fa-envelope"></i>
+              </a>
+             <a href="https://api.whatsapp.com/send?phone=+972525270491" class="drop-item">
+               ווטסאפ
+               <i class="fa fa-whatsapp"></i>
+             </a>
+            </div>
+           </div>
          <a class="top-bar-item">
            תחומי עיסוק
          </a>
@@ -87,4 +79,6 @@
     
 
   </body>
+  <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </html>
