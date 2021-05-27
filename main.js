@@ -1,14 +1,31 @@
-// var barItem = document.getElementsByClassName("topBarItem");
-// // document.addEventListener("mouseover", rolldown);
-// var dropping = document.getElementsByClassName('dropping');
-// barItem.addEventListener("mouseover", roll);
-// barItem.addEventListener("mouseout", hide) 
 
-// function roll(){
-//     console.log("dropping");
-//     $(".dropping").toggleClass("hide");
+// function Mopen(event) {
+    
+//     $(".mamar-content").toggleClass("blockk")
+//     // mcontent.style.opacity = 1;
+    
+//     console.log($(".mamar-content"));
 // }
-// function hide(){
-//     console.log("dropping");
-//     $(".dropping").toggleClass("hide");
-// }
+
+$(document).ready(function(){
+ 
+  
+ $(".mamarlist>h1").click(expand);
+function expand() {
+   $(this).parent(".mamarlist").css({
+       "height": "auto",
+       "max-height": "3000px",
+       "font-size" :"1.5em"
+   }),
+   $(this).on("click", collapse),
+   $(".collapse").click(collapse)
+ };
+     
+function collapse() {
+    $(this).closest(".mamarlist").css({
+        "max-height": "80px",
+        "font-size" :"1em"});
+    $(".mamarlist>h1").on("click", expand)
+  };
+
+});
