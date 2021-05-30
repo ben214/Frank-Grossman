@@ -275,7 +275,7 @@ body {
     font-size: 3em;
     font-style: oblique;
 }
-#secondPage{
+#מאמרים{
     background-image: linear-gradient( to right, transparent, white, white, transparent);
     position: relative;
     top: 100vh;
@@ -298,15 +298,15 @@ body {
     background-image: linear-gradient(to right, transparent, rgb(24, 106, 173)) ;
 }
 .mamarlist{
-    
     max-height: 80px;
     overflow-y:hidden;
-    transition: max-height .5s ease, height .2s ease;
+    transition: max-height .5s ease;
 }
 .mamar-content{
-    /* opacity: 0; */
+    margin-bottom: 1em;
 }
 .secondary h1{
+    transform: scale(1, 1.2);
     cursor: pointer;
     margin: 0 auto 2em;
     font-size: 1.2em;
@@ -316,7 +316,7 @@ body {
     text-align: center;
     width: 70%;
     box-shadow: #c5c5f5 0.1mm 0.1mm 0.9mm 0.1mm;
-    transition: font-size 0.4s ease;
+    transition: font-size 0.4s ease-in;
 }
 .secondary h1:hover{
     background: #e8f5fa
@@ -356,7 +356,10 @@ body {
 }
 .collapse:hover{
     color: black;
-    font-size: 1.4em;
-
+    font-size: 1.05em;
 }
-
+.openmamar{
+   height: auto;
+   max-height: 3000px;
+   font-size: 1.5em;
+}
