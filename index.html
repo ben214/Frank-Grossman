@@ -2,8 +2,12 @@
 <html lang="he" dir="rtl">
   <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="mstyle.css">
+    <link rel="stylesheet" media="screen and (min-width: 600px)" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta>
     <meta http-equiv="X-UA-Compatible" content="IE=7">
     <meta charset="utf-8">
     <link rel="icon" href="blueicon.jpg">
@@ -11,7 +15,7 @@
       פרנק גרוסמן משרד עורכי דין
  
     </title>
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="main.js"></script>
 
@@ -24,12 +28,16 @@
 
      <!-- menu bar -->
     <div id="top-bar">
+      
       <div class="bar-list">
         <div class="top-bar-item">
-         <a href="#">
+         <a href="#contact">
           צור קשר
          </a>
-          <div class="dropping">
+         <div class="arrowbox">
+           <div class='arrow'></div>
+         </div>
+          <div  class="dropping">
             <a href="https://api.whatsapp.com/send?phone=+972525270491" target="_blank" class="drop-item">
               ווטסאפ
               <i class="fa fa-whatsapp"></i>
@@ -45,27 +53,30 @@
            </div>
           </div>
         <div class="top-bar-item">
-          תחומי עיסוק
+          <a>תחומי עיסוק</a>
+          <div class="arrowbox">
+            <div class='arrow'></div>
+          </div>
           <div class="dropping">
-            <a href="#" class="drop-item">
+            <a  class="drop-item">
               ייצוג במכירה ורכישה של נדל"ן
             </a>
-           <a href="#" target="_blank" class="drop-item">
+           <a target="_blank" class="drop-item">
             שכירות
             </a>
-           <a href="#" class="drop-item">
+           <a  class="drop-item">
             תכנון ובניה
            </a>
-           <a href="#" class="drop-item">
+           <a  class="drop-item">
             צוואות
            </a>
-           <a href="#" class="drop-item">
+           <a  class="drop-item">
             צווי ירושה
            </a>
-           <a href="#" class="drop-item">
+           <a  class="drop-item">
             הסכמי ממון
            </a>
-           <a href="#" class="drop-item">
+           <a  class="drop-item">
             גישור ופישור
            </a>
           </div>
@@ -73,6 +84,9 @@
         <div class="top-bar-item">
           <a href="#מאמרים">
             מאמרים</a> 
+            <div class="arrowbox">
+              <div class='arrow'></div>
+            </div>
           <div class="dropping">
             <a class="refer" href="#טאבו">
               טאבו משותף – מה זה?
@@ -86,11 +100,19 @@
             <a class="refer" href="#הערת_אזהרה">
               הערת אזהרה
             </a>
+            <a class="refer" href="#בדיקת_עוד">
+              בדיקת עו"ד טרם רכישת דירה
+            </a>
             
           </div>
         </div>
         <div class="top-bar-item">
+          <a href="#office">
          המשרד
+        </a>
+        <div class="hide">
+          <div class='arrow'></div>
+        </div>
         </div>
        </div>
 
@@ -98,10 +120,15 @@
     </div>
     <!-- left banner -->
     <div id="leftBanner">
+      <a href="index.html">
        <div id="bannerdiv"> 
-        <p id="bannertext">
-        <span class="star">*</span>יש טעויות קטנות שמשלמים עליהם ביוקר .
-      </p>
+        <div id="bannertext">
+        
+        עו"ד ומגשרת ריבקי פרנק ממשרד עורכי דין פרנק גרוסמן 
+          בעלת נסיון בנדל"ן למעלה מ-20 שנה
+          לצדכם בעסקאות החשובות בחיים כדי לדאוג
+          לאינטרסים שלכם ולשמור על הזכויות שלכם!</p>
+        </div>
 
        </div>
       <div id="logobigwrap">
@@ -121,24 +148,55 @@
          FRANK - GROSSMAN LAW OFFICE
        </h4>
       </div>
+     </a>
+     <div id="mbarwrap">
+      <div id="mmenubar"></div>
+    </div>
      </div>
 
      <!-- main page content -->
      <div class="contentwrap" id="contentwrap">
        <div class="slogan maincontent">
-         <h1>בצד שלך.</h1>
-         <h2>בדיוק עכשיו. בדיוק בשבילך.</h2>
+         <h1>
+           בצד שלך.
+          </h1>
+         <h2>
+           בדיוק עכשיו. <br>
+            בדיוק בשבילך.
+          </h2>
        </div>
+       
      </div>
+     <div class="between">
+      <a href="tel:026263576">
+       ייעוץ טלפוני ללא עלות
+       <br>
+       <i class="fa fa-phone"></i>
+       02-626-3576
+      </a>
+      <div class='pointingleft'></div>
+    </div>
+
+     <button id="homebtn">
+       <a href="">
+      <i class="fa fa-home"></i>
+     </a>
+     </button>
+
+
+       <!--          -->
+     <!-- באנר בין העמודים -->
+      <!--          -->
+     
 
      <!-- 2nd page -->
-     <div id="מאמרים" class="mamarim">
+     <div id="מאמרים">
 
        <div class="secondary">
          <p id="pageheader">
            לפניכם רשימת מאמרים:
          </p>
-         <div id="טאבו" class="mamarlist" >
+         <div href="#טאבו" id="טאבו" class="mamarlist" >
            
          <h1 >
           טאבו משותף – מה זה?
@@ -288,7 +346,7 @@
           <!--  -->
 <!-- מאמר חוזים -->
       <!--  -->
-      <div  id="חוזים" class="mamarlist" >
+      <div href="#חוזים" id="חוזים" class="mamarlist" >
         <h1>
           "חוזים" את העתיד
           ומונעים טעויות    
@@ -360,7 +418,7 @@
 <!-- מאמר הערת אזהרה -->
 <!--               -->
 
-<div id="הערת_אזהרה" class="mamarlist" >
+<div href="#הערת_אזהרה"  id="הערת_אזהרה" class="mamarlist" >
   <h1 >
     הערת אזהרה  
   </h1>
@@ -414,9 +472,201 @@
 
 </div>
 
-      </div>
+<!--              -->
+<!-- בדיקת עו"ד לפני רכישת דירה -->
+<!--               -->
+<div href="#בדיקת_עוד" id="בדיקת_עוד" class="mamarlist" >
+  <h1 >
+    בדיקות עורך דין טרם רכישת דירה  
+  </h1>
+<div class="mamar-content">
 
+  <p>
+    רכישת דירה עשויה להיות אחת העסקאות הגדולות
+שתעשו בחיים, וכמו בכל עסקה גדולה ישנם פרטים
+רבים שצריך לבדוק קודם הסגירה בכדי שלא להיקלע
+לסיבוכים ולהפסדים גדולים
+  </p>
+  <p>
+    ליווי של עורך דין שיבצע את הבדיקות הנחוצות יחסוך
+מכם עגמת נפש ותקלות. להלן מספר דוגמאות
+לבדיקות חשובות אותם צריך לבצע עורך הדין שלכם
+לפני הרכישה.
+  </p>
+  <p>
+    לא פעם קורה שמוכר מכר דירה אחת לשני רוכשים שונים
+    וקיבל מקדמה משניהם..!
+  </p>
+  <p>
+    <strong>
+      1. בעלות
+    </strong><br>
+האם המוכר הוא אכן הבעלים הרשומים של הנכס וכי
+אין בעלים רשומים אחרים או נוספים, יש לזכור כי
+ללא הסכמת וחתימת כל הבעלים הרשומים (גם אם
+זה לא שלהם בפועל) לא תוכלו לרשום את הנכס על
+שמכם.
+  </p>
+  <p>
+    <strong>
+      2. התאמה
+    </strong><br>
+    האם קיימת ההתאמה מוחלטת בין הנכס לבין
+הרישום.
+  </p>
+  <p>
+    <strong>
+      3. עיקולים והתחייבויות
+    </strong><br>
+    האם אין על הדירה עיקולים משכנתאות והערות בגין
+עסקאות קודמות, דירה כזו לא תוכל להירשם על שם
+הרוכשים עד לסילוק כל החובות וההתחייבויות של
+המוכר.
+  </p>
+  <p>
+    <strong>
+      4. מיסוי
+    </strong><br>
+    אלו מיסים יחולו על העסקה באם תחתם. לעיתים
+המיסוי הכבד מונע את כדאיות העסקה, יש לשים לב
+כי ישנו שינוי משמעותי מאוד בחוק משנת 2014 ויש
+לבחון את הדברים על ידי עורך דין טרם החתימה.
+ </p>
+ <p>
+  <strong>
+    5. מצב תכנוני
+  </strong><br>
+  מהו המצב התכנוני של הדירה כדי לוודא שאין צו
+הריסה או הערה תכנונית אחרת על הדירה, יש
+לבדוק את הדברים ביסודיות ובמקרים רבים כדאי
+להסתייע במהנדס או אדריכל על מנת לבדוק את
+חריגות הבניה.
+</p>
+
+ <i class="collapse fa fa-angle-double-up"></i>
+</div>
+
+</div>
+
+      </div>
+      
      </div>
+     <div class="between">
+      <a href="tel:026263576">
+        דואגים לאינטרסים שלכם
+       <br>
+       <i class="fa fa-phone"></i>
+       חייגו: 
+       02-626-3576
+      </a>
+      <div class='pointingleft'></div>
+    </div>
+    
+
+
+     
+     
+<!--   contact info     -->
+        <!--   contact info     -->
+    <div id="contact" >
+      
+      <div class="secondary">
+        <p id="pageheader2">
+          יצירת קשר
+        </p>
+
+        
+        <div id='insidecontact'>
+          <a href="https://api.whatsapp.com/send?phone=+972525270491" target="_blank" class="">
+            <i class="fa fa-whatsapp"></i><br>
+            ווטסאפ:
+           0525270491   
+          </a>
+           <a href="tel:026263576" class="">
+            <i class="fa fa-fax"></i><br>
+           
+              טלפון:
+            02-62-63-576
+           </a>
+          <a href="mailto:rfr9mt@gmail.com" target="_blank" class="">
+            <i class="fa fa-envelope"></i><br>
+           מייל:
+           rfr9mt@gmail.com
+            
+           </a>
+          
+        </div>
+       </div>
+       
+        
+
+       </div>
+       
+     </div>
+     <div class="between">
+      <a href="tel:026263576">
+        לצדכם בעסקאות החשובות בחיים
+       <br>
+       <i class="fa fa-phone"></i>
+       חייגו: 
+       02-626-3576
+      </a>
+      <div class='pointingleft'></div>
+    </div>
+     
+     
+
+
+     <div id='office'>
+      
+        <p id="pageheader2">
+          המשרד שלנו
+        </p>
+       <div id="officecontent">
+         
+       <div class="mapwrap">
+        <p class="officetext">
+          משרדנו ממוקם
+ברח‘ שבטי ישראל 40 ירושלים
+         </p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4033.1330493741375!2d35.22706090266712!3d31.78556214672292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x150329e8ec08bad5%3A0xdee77d458977b1b5!2z16TXqNeg16cg15LXqNeV16HXntefINee16nXqNeTINei15XXqNeb15kg15PXmdef!5e0!3m2!1siw!2sil!4v1623049428985!5m2!1siw!2sil" width="100%" height="200" style="border:0;" allowfullscreen="true" loading="lazy">
+      </iframe>
+    </div>
+    <div id="directions">
+      הגעה: 
+      <a class='directitem'  href="https://goo.gl/maps/ou5rEZicYcMbXoHJ8" target="_blank">
+<img src="gmaps.png" alt="googleMaps">
+<p>
+  לניווט במפות 
+Google
+</p>
+      </a>
+      <a class='directitem' href="https://waze.com/ul/hsv9hcd4n6" target="_blank">
+        <img id='waze' src="wazeicon.png" alt="Waze">
+        <p>
+          לניווט באמצעות 
+         Waze
+
+        </p>
+      </a>
+
+    </div>
+  </div>
+
+  <div id="ad">
+    <p>
+      רוצים אתר תדמית?
+      <br>
+      <a href="https://api.whatsapp.com/send?phone=+972556686649" target="_blank">
+        קבלו הצעה
+      </a>
+      
+    </p>
+     </div>
+     </div>
+
+     
+     
     
     
 
