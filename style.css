@@ -15,14 +15,7 @@ body {
     font-family: 'calibri';
     overflow-x: hidden;
     background: #C9C7F4;
-   
-    
-    
-    /* background-color: transparent; */
-    /* background-image: linear-gradient(
-180deg
-, #ffffff 0%, rgba(43,155,179,0) 100%); */
- }
+}
  .hide{
      opacity: 0;
      display: none;
@@ -147,13 +140,13 @@ body {
     height: 100vh;
     width: var(--mywidth);
 }
-#barback{
-    position:fixed;
+#barback {
+    position: fixed;
     right: 0;
     top: 0;
     width: calc(100% - 20em);
-    height: 4em;
-    background: white;
+    height: 8em;
+    background-image: linear-gradient(#D7F1FC, #D7F1FC, transparent);
     z-index: 4;
 }
 .backimg{
@@ -329,7 +322,6 @@ body {
     transform: rotate(354deg);
 }
 #homebtn{
-    content: '#logowrap';
     height: 60px;
     width: 60px;
     background: rgb(214, 234, 250);
@@ -341,6 +333,8 @@ body {
     border-radius: 50%;
     box-shadow: rgb(4, 48, 75) 0mm 0mm  1mm 0.5mm;
     opacity: 0.3;
+    pointer-events: all;
+    cursor: pointer;
 }
 #homebtn:hover{
     opacity: 1;
@@ -382,6 +376,26 @@ body {
 
 .mamarlist{
     width: auto;
+    /* pointer-events: all;
+    cursor: pointer; */
+}
+
+#hopen{
+    transform: scale(.8, 1);
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 22px;
+    font-weight: 700;
+    color: #2f426d;
+    text-align: center;
+    box-shadow: #f2f2fc -0.4mm -0.4mm 0mm 0.1mm;
+    transition: 0.2s ease-in;
+    font-size: 40px;
+    background-image: linear-gradient(#97D6F0, transparent);
+    border-top: 1mm solid #0086E3;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+      
 }
 .distance{
     line-height:150px;
@@ -394,7 +408,7 @@ body {
     border-radius: 15px;
   
 }
-.secondary h1{
+.mhead{
     transform: scale(.8, 1);
     cursor: pointer;
     margin: 0 auto;
@@ -405,11 +419,11 @@ body {
     text-align: center;
     width: 70%;
     box-shadow: #f2f2fc -0.4mm -0.4mm 0mm 0.1mm;
-    transition: 0.4s ease-in;
+    transition: 0.2s ease-in;
     border-top: none;
     border-radius: 0 0 0 0;
 }
-.secondary h1:hover{
+.mhead:hover{
     background: #e8f5fa
 }
 .secondary h2 {
@@ -441,16 +455,16 @@ body {
 }
 .collapse{
     margin-bottom: 1em;
-    padding: .8mm;
+    padding: 1em;
     color: #26A8DF;
-    font-size: 1em;
+    font-size: 2em;
     display: block;
     text-align: center;
     filter: drop-shadow(0.1mm 0.1mm 2mm rgb(38, 38, 71));
 }
 .collapse:hover{
     color: black;
-    font-size: 1.05em;
+    font-size: 2.1em;
 }
 .scrollUp{
     transform: translateY(-80px)
@@ -499,7 +513,7 @@ body {
     height: fit-content;
     padding: 2em;
     margin: 0 auto;
-    box-shadow: 1px -2px 3px 0px #0F75BD;
+    box-shadow: 1px -2px 3px 0px #6aa4ec;
 }
 .mapwrap{
     color:#0F75BD;
